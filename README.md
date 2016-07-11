@@ -27,16 +27,16 @@ Just add your Cloudinary Api key, secret and Cloud name to this plugin's setting
 This plugin uploads (copies) your assets to your Cloudinary account, on upload. If you want it to, it will also delete the files whenever you do so in Craft CMS.
 To show one of your assets from a template, use the plugin's variable.
 
-{% set asset = craft.assets.id(95).first() %}
-{{ craft.npcloudinary.img(asset, {
-	responsive: true,
-	width: 'auto',
-	height: 325,
-	crop: 'fill',
-	gravity: 'auto',
-	quality: 'auto',
-	fetch_format: 'auto',
-}) | raw }}
+    {% set asset = craft.assets.id(95).first() %}
+    {{ craft.npcloudinary.img(asset, {
+        responsive: true,
+        width: 'auto',
+        height: 325,
+        crop: 'fill',
+        gravity: 'auto',
+        quality: 'auto',
+        fetch_format: 'auto',
+    }) | raw }}
 
 ## NP Cloudinary Changelog
 

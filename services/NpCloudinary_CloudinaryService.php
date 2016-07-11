@@ -56,7 +56,7 @@ class NpCloudinary_CloudinaryService extends BaseApplicationComponent
 	public function getAssetTag(AssetFileModel $asset, $options)
 	{
 		$publicId = $this->getAssetHandle($asset);
-		
+
 		$this->includeJs();
 		return cl_image_tag($publicId, $options);
 	}
@@ -66,9 +66,9 @@ class NpCloudinary_CloudinaryService extends BaseApplicationComponent
 		$filenameWithoutExtension = pathinfo($asset->filename, PATHINFO_FILENAME);
 
 		return
-			'craft-cms_'
+			$asset->folder->name
 			.'_'
-			.$asset->id;
+			.$filenameWithoutExtension;
 	}
 
 	protected function handleError($error)

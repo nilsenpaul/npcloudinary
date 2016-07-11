@@ -53,7 +53,7 @@ class NpCloudinaryPlugin extends BasePlugin
 			]);
 
 			craft()->on('assets.saveAsset', function(Event $event) {
-				craft()->npCloudinary_cloudinary->uploadAsset($event);
+				craft()->npCloudinary_cloudinary->uploadAsset($event->params['asset']);
 			});
 
 			craft()->on('assets.deleteAsset', function(Event $event) {

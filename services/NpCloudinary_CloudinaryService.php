@@ -15,10 +15,8 @@ namespace Craft;
 
 class NpCloudinary_CloudinaryService extends BaseApplicationComponent
 {
-    	public function uploadAsset(Event $event)
+    	public function uploadAsset(AssetFileModel $savedAsset)
     	{
-		$savedAsset = $event->params['asset']; 
-		
 		try {
 			\Cloudinary\Uploader::upload($savedAsset->url, [
 				'public_id' => $this->getAssetHandle($savedAsset),

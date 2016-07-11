@@ -3,6 +3,8 @@
 {% includeCssResource "npcloudinary/css/NpCloudinary_Style.css" %}
 {% includeJsResource "npcloudinary/js/NpCloudinary_Script.js" %}
 
+<a href="{{ actionUrl('npCloudinary/admin/cloudinarificateAssets') }}">Add all existing assets to Cloudinary (use with caution)</a>
+
 {{ forms.textField({
     label: 'Cloudinary Cloud name',
     instructions: 'Your Cloudinary Cloud name can be found on your Cloudinary dashboard',

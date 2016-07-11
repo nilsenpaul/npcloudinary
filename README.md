@@ -12,7 +12,7 @@ To install NP Cloudinary, follow these steps:
 4. Install plugin in the Craft Control Panel under Settings > Plugins
 5. The plugin folder should be named `npcloudinary` for Craft to see it.  GitHub recently started appending `-master` (the branch name) to the name of the folder for zip file downloads.
 
-NP Cloudinary works on Craft 2.4.x and Craft 2.5.x.
+NP Cloudinary works on Craft 2.4.x and Craft 2.5.x, with PHP >= 5.4.x.
 
 ## NP Cloudinary Overview
 

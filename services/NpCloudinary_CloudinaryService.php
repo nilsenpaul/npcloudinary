@@ -66,13 +66,9 @@ class NpCloudinary_CloudinaryService extends BaseApplicationComponent
 		$filenameWithoutExtension = pathinfo($asset->filename, PATHINFO_FILENAME);
 
 		return
-			$asset->folder->id
+			'craft-cms_'
 			.'_'
-			.$asset->folder->name
-			.'_'
-			.$asset->id
-			.'-'
-			.$filenameWithoutExtension;	
+			.$asset->id;
 	}
 
 	protected function handleError($error)

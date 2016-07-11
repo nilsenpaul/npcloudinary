@@ -38,6 +38,13 @@ To show one of your assets from a template, use the plugin's variable.
         fetch_format: 'auto',
     }) | raw }}
 
+All options are passed to Cloudinary's API.
+If you want to use Cloudinary's responsive features, be sure to add:
+
+    <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width"> 
+
+... to your header.
+
 ## NP Cloudinary Changelog
 
 ### 0.0.1 -- 2016.06.23

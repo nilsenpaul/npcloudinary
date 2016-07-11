@@ -1,0 +1,38 @@
+{% import "_includes/forms" as forms %}
+
+{% includeCssResource "npcloudinary/css/NpCloudinary_Style.css" %}
+{% includeJsResource "npcloudinary/js/NpCloudinary_Script.js" %}
+
+{{ forms.textField({
+    label: 'Cloudinary Cloud name',
+    instructions: 'Your Cloudinary Cloud name can be found on your Cloudinary dashboard',
+    id: 'cloudName',
+    name: 'cloudName', 
+    value: settings['cloudName']})
+}}
+
+{{ forms.textField({
+    label: 'Cloudinary API key',
+    instructions: 'Your Cloudinary API key can be found on your Cloudinary dashboard',
+    id: 'apiKey',
+    name: 'apiKey', 
+    value: settings['apiKey']})
+}}
+
+{{ forms.textField({
+    label: 'Cloudinary API secret',
+    instructions: 'Your Cloudinary API secret can be found on your Cloudinary dashboard',
+    id: 'apiSecret',
+    name: 'apiSecret', 
+    value: settings['apiSecret']})
+}}
+
+{{ forms.lightswitchField({
+	label: 'Remove files from Cloudinary if deleted in Craft',
+        instructions: 'Should your Cloudinary resources be deleted if you delete a file in Craft?',
+        id: 'removeIfDeleted',
+        name: 'removeIfDeleted',
+        on: settings['removeIfDeleted'],
+        first: true,
+}) }}
+

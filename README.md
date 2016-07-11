@@ -2,8 +2,6 @@
 
 A simple way to let Craft CMS and Cloudinary interact.
 
-![Screenshot](resources/screenshots/plugin_logo.png)
-
 ## Installation
 
 To install NP Cloudinary, follow these steps:
@@ -18,28 +16,30 @@ NP Cloudinary works on Craft 2.4.x and Craft 2.5.x.
 
 ## NP Cloudinary Overview
 
--Insert text here-
+This plugin lets you use Cloudinary's advanced image magic from within your Craft CMS Twig templates.
 
 ## Configuring NP Cloudinary
 
--Insert text here-
+Just add your Cloudinary Api key, secret and Cloud name to this plugin's settings.
 
 ## Using NP Cloudinary
 
--Insert text here-
+This plugin uploads (copies) your assets to your Cloudinary account, on upload. If you want it to, it will also delete the files whenever you do so in Craft CMS.
+To show one of your assets from a template, use the plugin's variable.
 
-## NP Cloudinary Roadmap
-
-Some things to do, and ideas for potential features:
-
-* Release it
+{% set asset = craft.assets.id(95).first() %}
+{{ craft.npcloudinary.img(asset, {
+	responsive: true,
+	width: 'auto',
+	height: 325,
+	crop: 'fill',
+	gravity: 'auto',
+	quality: 'auto',
+	fetch_format: 'auto',
+}) | raw }}
 
 ## NP Cloudinary Changelog
 
 ### 0.0.1 -- 2016.06.23
 
 * Initial release
-
-Brought to you by [Paul Verheul for Nils &amp; Paul](https://www.nilsenpaul.nl)
-=======
-# npcloudinary

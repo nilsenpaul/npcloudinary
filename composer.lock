@@ -344,37 +344,19 @@
         },
         {
             "name": "bower-asset/lodash",
-            "version": "3.10.1",
+            "version": "3.10.3-patch1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lodash/lodash.git",
-                "reference": "dfbd78f71de0550068fc82ce6e013d443e5037d7"
+                "reference": "f7b17fab1bf773ad1e5d0e3fa398ee7213495c86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lodash/lodash/zipball/dfbd78f71de0550068fc82ce6e013d443e5037d7",
-                "reference": "dfbd78f71de0550068fc82ce6e013d443e5037d7",
+                "url": "https://api.github.com/repos/lodash/lodash/zipball/f7b17fab1bf773ad1e5d0e3fa398ee7213495c86",
+                "reference": "f7b17fab1bf773ad1e5d0e3fa398ee7213495c86",
                 "shasum": ""
             },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": "lodash.js",
-                "bower-asset-ignore": [
-                    ".*",
-                    "*.custom.*",
-                    "*.log",
-                    "*.map",
-                    "*.md",
-                    "lodash.src.js",
-                    "component.json",
-                    "package.json",
-                    "doc",
-                    "node_modules",
-                    "perf",
-                    "test",
-                    "vendor"
-                ]
-            }
+            "type": "bower-asset-library"
         },
         {
             "name": "cloudinary/cloudinary_php",

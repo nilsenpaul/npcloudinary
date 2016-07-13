@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite95a229641e653d2058134b0d00e0e9d
+class ComposerStaticInit1a07cfc1937a3e388d4ebc5694f271bc
 {
     public static $files = array (
         'c15243c55ab4c20eff78d1e24be20dac' => __DIR__ . '/..' . '/cloudinary/cloudinary_php/src/Helpers.php',
@@ -53,9 +53,9 @@ class ComposerStaticInite95a229641e653d2058134b0d00e0e9d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite95a229641e653d2058134b0d00e0e9d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite95a229641e653d2058134b0d00e0e9d::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInite95a229641e653d2058134b0d00e0e9d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1a07cfc1937a3e388d4ebc5694f271bc::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1a07cfc1937a3e388d4ebc5694f271bc::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit1a07cfc1937a3e388d4ebc5694f271bc::$classMap;
 
         }, null, ClassLoader::class);
     }

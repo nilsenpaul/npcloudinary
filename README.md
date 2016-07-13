@@ -7,10 +7,11 @@ A simple way to let Craft CMS and Cloudinary interact.
 To install NP Cloudinary, follow these steps:
 
 1. Download & unzip the file and place the `npcloudinary` directory into your `craft/plugins` directory
-2.  -OR- do a `git clone https://github.com/nilsenpaul/npcloudinary/npcloudinary.git` directly into your `craft/plugins` folder.  You can then update it with `git pull`
-3.  -OR- install with Composer via `composer require nilsenpaul/npcloudinary/npcloudinary`
-4. Install plugin in the Craft Control Panel under Settings > Plugins
-5. The plugin folder should be named `npcloudinary` for Craft to see it.  GitHub recently started appending `-master` (the branch name) to the name of the folder for zip file downloads.
+2.  -OR- do a `git clone https://github.com/nilsenpaul/npcloudinary.git` directly into your `craft/plugins` folder.  You can then update it with `git pull`
+3.  -OR- install with Composer via `composer require nilsenpaul/npcloudinary`
+4. Run `composer update` from the plugin's folder
+5. Install plugin in the Craft Control Panel under Settings > Plugins
+6. The plugin folder should be named `npcloudinary` for Craft to see it.  GitHub recently started appending `-master` (the branch name) to the name of the folder for zip file downloads.
 
 NP Cloudinary works on Craft 2.4.x and Craft 2.5.x, with PHP >= 5.4.x.
 

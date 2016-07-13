@@ -1,5 +1,6 @@
 # NP Cloudinary plugin for Craft CMS
 
+
 A simple way to let Craft CMS and Cloudinary interact.
 
 ## Installation

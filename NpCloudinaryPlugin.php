@@ -8,21 +8,8 @@
  * @copyright Copyright (c) 2016 Paul Verheul for Nils &amp; Paul
  * @link	  https://www.nilsenpaul.nl
  * @package   NpCloudinary
- * @since	 0.0.1
+ * @since	 1.0.0
  */
-
-/* USAGE:
-{% set asset = craft.assets.id(95).first() %}
-{{ craft.npcloudinary.img(asset, {
-	responsive: true,
-	width: 'auto',
-	height: 325,
-	crop: 'fill',
-	gravity: 'auto',
-	quality: 'auto',
-	fetch_format: 'auto',
-}) | raw }}
-*/
 
 namespace Craft;
 
@@ -99,7 +86,7 @@ class NpCloudinaryPlugin extends BasePlugin
 	 */
 	public function getVersion()
 	{
-		return '0.1.0';
+		return '1.0.0';
 	}
 
 	/**
@@ -107,7 +94,7 @@ class NpCloudinaryPlugin extends BasePlugin
 	 */
 	public function getSchemaVersion()
 	{
-		return '0.0.1';
+		return '1.0.0';
 	}
 
 	/**

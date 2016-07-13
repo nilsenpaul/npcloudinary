@@ -1,6 +1,7 @@
 {
 	"name": "nilsenpaul/npcloudinary/npcloudinary'",
 	"description": "A simple way to let Craft CMS and Cloudinary interact",
+	"version": "0.1.0-beta1",
 	"type": "craft-plugin",
 	"authors": [
 		{

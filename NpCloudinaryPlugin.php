@@ -78,7 +78,7 @@ class NpCloudinaryPlugin extends BasePlugin
 	 */
 	public function getReleaseFeedUrl()
 	{
-		return 'https://raw.githubusercontent.com/nilsenpaul/npcloudinary/npcloudinary/master/releases.json';
+		return 'https://raw.githubusercontent.com/nilsenpaul/npcloudinary/master/releases.json';
 	}
 
 	/**
